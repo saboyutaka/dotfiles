@@ -1,0 +1,7 @@
+Pry.config.commands.alias_command "h", "hist --tail 30"
+Pry.config.commands.alias_command "hg", "hist --grep"
+Pry.config.commands.alias_command "hgl","hist --tail 1 -n --grep"
+Pry.config.commands.alias_command "r", "hist --replay"
+Pry.config.commands.alias_command "si", "show-input"
+Pry.config.commands.alias_command "n", "next"
+Pry.config.commands.alias_command "s", "step"

@@ -1,0 +1,6 @@
+cp `echo $SSHHOME/.sshrc.d/.aliases $HOME`
+cp `echo $SSHHOME/.sshrc.d/.bashrc` $HOME
+cp `echo $SSHHOME/.sshrc.d/.vimrc` $HOME
+cp `echo $SSHHOME/.sshrc.d/.gitconfig` $HOME
+source `echo $HOME/.aliases`
+source `echo $HOME/.bashrc`

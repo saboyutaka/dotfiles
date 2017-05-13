@@ -1,0 +1,12 @@
+[user]
+  name = Yutaka Tachibana
+  email = yutaka.paradigm.shift@gmail.com
+[color]
+  ui = true
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim -c \"set fenc=utf-8\"
+  filemode = false
+[bash]
+  showDirtyState = true
+

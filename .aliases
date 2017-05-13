@@ -1,0 +1,81 @@
+# General aliases
+
+#alias rm='rmtrash'
+alias rm='/usr/local/bin/rmtrash'
+alias remove='/bin/rm'
+alias cdr='cd `git rev-parse --show-toplevel`'
+alias up='cd ..'
+alias upp='cd ../../'
+alias uppp='cd ../../../'
+alias v='vim'
+alias vi='vim'
+alias hi='history'
+alias h='history'
+alias ls='ls -G'
+alias ll='ls -Gl'
+alias lla='ll -a'
+alias va='vagrant'
+alias less='less -R'
+alias tm='tmuxinator'
+
+#Git aliases
+alias g='git'
+alias ga='git add'
+alias gb='git branch'
+alias gg='display_git_branch_and_wip_files'
+alias gd='git diff '
+alias gf='git diff --name-only | peco | pbcopy'
+alias gdc='git diff --cached'
+alias gc='git checkout'
+alias gcd='gc develop'
+alias gcm='gc master'
+alias gcp='gc -'
+alias gpoc='git push origin `gitcurrentbranch`'
+alias gs='git stash'
+alias gsp='git stash pop'
+alias gsl='git stash list'
+alias gl='git log'
+alias glf='git log --follow'
+alias glg='git log --graph --pretty=oneline --abbrev-commit'
+alias gwip="git commit -m '[WIP]'"
+alias gempty='git commit --allow-empty --message "empty commit"'
+alias grh='git reset HEAD'
+alias grh^='git reset HEAD^'
+alias grc='git rebase --continue'
+alias gpr='git pull --rebase;gbd_merged'
+alias gitcurrentbranch='git rev-parse --abbrev-ref HEAD'
+alias git_latest_tag='git describe --tags $(git rev-list --tags --max-count=1)'
+alias gitlocalignore='git update-index --assume-unchanged'
+alias gitlocalignorereset='git update-index --no-assume-unchanged'
+alias gbd_merged="git branch --merged | grep -v '^\*' | grep -v '^  master$' | grep -v '^  develop$' | xargs git branch -d"
+alias gmpr='git_log_after_latest_mpr'
+alias gmt='git mergetool'
+alias gkl='git kakusu-list | grep ^S'
+alias tigme='tig --author="Yutaka"'
+alias tib='tig blame'
+alias tigdm=' tig master..HEAD'
+
+# alias -g
+alias -g destory=destroy
+
+# Ruby aliases
+alias s='spring'
+alias srs='spring rails s'
+alias src='spring rails c'
+alias bundleinit="bundle install --binstubs=vendor/bin --path=vendor/bundle"
+alias be='bundle exec'
+alias ctagsruby='ctags -f ./.tags --langmap=RUBY:.rb --exclude="*.js"  --exclude=".git*" -R .'
+
+# Python aliases
+alias ipy='ipython'
+
+# Mac settings
+alias safari='open -a safari'
+alias d='dict'
+alias e='atom'
+alias m='micro'
+
+# Docker
+alias dc='docker-compose'
+alias dcr='dc run rails'
+
