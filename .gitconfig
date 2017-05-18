@@ -20,3 +20,5 @@
 
 [ghq]
 	root = /Users/yutaka/Development/src
+[pull]
+	rebase = true
