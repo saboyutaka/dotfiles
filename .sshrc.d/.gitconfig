@@ -9,4 +9,12 @@
   filemode = false
 [bash]
   showDirtyState = true
-
+[alias]
+  empty-commit = commit --allow-empty -m \"[empty commit]\"
+  kakusu = update-index --skip-worktree
+  no-kakusu = update-index --no-skip-worktree
+  kakusu-list = ls-files -v
+  cb = rev-parse --abbrev-ref HEAD
+  unstage = rm --cached
+[pull]
+  rebase = true
