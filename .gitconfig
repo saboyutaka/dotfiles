@@ -1,24 +1,24 @@
 [user]
-	name = Yutaka Tachibana
-	email = yutaka.paradigm.shift@gmail.com
+  name = Yutaka Tachibana
+  email = yutaka.paradigm.shift@gmail.com
 [color]
-	ui = true
+  ui = true
 [core]
-	excludesfile = ~/.gitignore
-	editor = vim -c \"set fenc=utf-8\"
+  excludesfile = ~/.gitignore
+  editor = vim -c \"set fenc=utf-8\"
   filemode = false
 [bash]
-	showDirtyState = true
+  showDirtyState = true
 [alias]
-	empty-commit = commit --allow-empty -m \"[empty commit]\"
-	open = browse
-	kakusu = update-index --skip-worktree
-	no-kakusu = update-index --no-skip-worktree
-	kakusu-list = ls-files -v
+  empty-commit = commit --allow-empty -m \"[empty commit]\"
+  open = browse
+  kakusu = update-index --skip-worktree
+  no-kakusu = update-index --no-skip-worktree
+  kakusu-list = ls-files -v
   cb = rev-parse --abbrev-ref HEAD
   unstage = rm --cached
 
 [ghq]
-	root = /Users/yutaka/Development/src
+  root = /Users/yutaka/Development/src
 [pull]
-	rebase = true
+  rebase = true
