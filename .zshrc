@@ -98,11 +98,11 @@ function rprompt-git-current-branch {
           color=${fg[red]}
   fi
 
-  if [[ -n `${git} log --oneline -n 1 | grep 'WIP'` ]]; then
-	  wip='[WIP]'
+  if [[ `${git} log --oneline -n 1 2> /dev/null | grep 'WIP'` ]]; then
+    wip='[WIP]'
   fi
 
-  ctime=`${git} log -n 1 --pretty=format:'%cr'`
+  ctime=`${git} log -n 1 --pretty=format:'%cr' 2> /dev/null`
   timecolor=${fg[blue]}
   echo "%{$color%}$wip %{$reset_color%}(%{$color%}$name%{$reset_color%}) %{$timecolor%}$ctime%{$reset_color%}"
 }
