@@ -25,6 +25,15 @@ bindkey '^[[Z' reverse-menu-complete
 setopt list_packed
 setopt auto_cd
 
+# beep を無効にする
+setopt no_beep
+
+# Ctrl+Dでzshを終了しない
+setopt ignore_eof
+
+# '#' 以降をコメントとして扱う
+setopt interactive_comments
+
 autoload auto_pushd pushdsilent
 autoload -Uz add-zsh-hook
 autoload -U colors; colors
@@ -54,11 +63,12 @@ zstyle ':completion:*:warnings' format '%F{RED}No matches for:''%F{YELLOW} %d'$D
 zstyle ':completion:*:descriptions' format '%F{YELLOW}completing %B%d%b'$DEFAULT
 zstyle ':completion:*:options' description 'yes'
 zstyle ':completion:*:descriptions' format '%F{yellow}Completing %B%d%b%f'$DEFAULT
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*:default' menu select=1
 # マッチ種別を別々に表示
 zstyle ':completion:*' group-name ''
 
-function rprompt-git-current-branch {
+function rprompt-git-info {
   local name st color wip ctime timecolor
   local git==git
 
@@ -105,9 +115,10 @@ git_log_after_latest_mpr() {
 
 # z
 . `brew --prefix`/etc/profile.d/z.sh
+
 precmd () {
   PROMPT='%F{cyan}%~ $ %f'
-  RPROMPT='`rprompt-git-current-branch`'
+  RPROMPT='`rprompt-git-info`'
   z --add "$(pwd -P)"
 }
 
