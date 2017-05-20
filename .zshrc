@@ -19,46 +19,27 @@ if [ -e /usr/local/share/zsh-completions ]; then
   fpath=(/usr/local/share/zsh-completions $fpath)
 fi
 
-setopt list_packed
-
-# hub
-function git(){hub "$@"}
-
 # Reirculate suggestion
 bindkey '^[[Z' reverse-menu-complete
+
+setopt list_packed
+setopt auto_cd
 
 autoload auto_pushd pushdsilent
 autoload -Uz add-zsh-hook
 autoload -U colors; colors
 autoload -Uz vcs_info
 
-# iTerm2 Tab title
-change_iterms_prompt() {
-  echo -ne "\033]0;${HOSTNAME%%.*}:${PWD/$HOME/~}\007"
-}
-add-zsh-hook precmd change_iterms_prompt
-
 # History
 export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=100000
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
 setopt hist_ignore_dups
 setopt EXTENDED_HISTORY
 setopt share_history
 setopt hist_no_store
-
-# peco
-bindkey '^]' peco-src
-
-function peco-src() {
-  local src=$(ghq list --full-path | peco --query "$LBUFFER")
-  if [ -n "$src" ]; then
-    BUFFER="cd $src"
-    zle accept-line
-  fi
-  zle -R -c
-}
-zle -N peco-src
 
 # Autocompletion
 autoload -U compinit
@@ -73,6 +54,7 @@ zstyle ':completion:*:warnings' format '%F{RED}No matches for:''%F{YELLOW} %d'$D
 zstyle ':completion:*:descriptions' format '%F{YELLOW}completing %B%d%b'$DEFAULT
 zstyle ':completion:*:options' description 'yes'
 zstyle ':completion:*:descriptions' format '%F{yellow}Completing %B%d%b%f'$DEFAULT
+zstyle ':completion:*:default' menu select=1
 # マッチ種別を別々に表示
 zstyle ':completion:*' group-name ''
 
@@ -108,15 +90,6 @@ function rprompt-git-current-branch {
 }
 setopt prompt_subst
 
-# z
-. `brew --prefix`/etc/profile.d/z.sh
-
-precmd () {
-  PROMPT='%F{cyan}%~ $ %f'
-  RPROMPT='`rprompt-git-current-branch`'
-  z --add "$(pwd -P)"
-}
-
 display_git_branch_and_wip_files() {
   echo "${fg[blue]}######################################$reset_color"
   git branch
@@ -130,8 +103,36 @@ git_log_after_latest_mpr() {
   git log `git_latest_tag`..origin/master --oneline  --grep 'Merge pull request'
 }
 
+# z
+. `brew --prefix`/etc/profile.d/z.sh
+precmd () {
+  PROMPT='%F{cyan}%~ $ %f'
+  RPROMPT='`rprompt-git-current-branch`'
+  z --add "$(pwd -P)"
+}
+
+# hub
+function git(){hub "$@"}
+
+# peco
+bindkey '^]' peco-src
+
+function peco-src() {
+  local src=$(ghq list --full-path | peco --query "$LBUFFER")
+  if [ -n "$src" ]; then
+    BUFFER="cd $src"
+    zle accept-line
+  fi
+  zle -R -c
+}
+zle -N peco-src
+
 # iTerm2
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+change_iterms_prompt() {
+  echo -ne "\033]0;${HOSTNAME%%.*}:${PWD/$HOME/~}\007"
+}
+add-zsh-hook precmd change_iterms_prompt
 
 # rmtrash
 alias rm='/usr/local/bin/rmtrash'
