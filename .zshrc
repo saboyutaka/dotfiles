@@ -145,10 +145,6 @@ change_iterms_prompt() {
 }
 add-zsh-hook precmd change_iterms_prompt
 
-# rmtrash
-alias rm='/usr/local/bin/rmtrash'
-alias remove='/bin/rm'
-
 # rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
