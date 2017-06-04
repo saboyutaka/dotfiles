@@ -75,7 +75,7 @@ function rprompt-git-info {
   if [[ "$PWD" =~ '/\.git(/.*)?$' ]]; then
           return
   fi
-  name=$(basename "`${git} cb 2> /dev/null`")
+  name=$(basename "`${git} rev-parse --abbrev-ref HEAD 2> /dev/null`")
   if [[ -z $name ]]; then
           return
   fi
