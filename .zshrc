@@ -159,8 +159,8 @@ eval "$(pyenv virtualenv-init -)"
 # export PATH="$HOME/anaconda/bin:$PATH"
 
 # nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
+# export PATH="$HOME/.nodenv/bin:$PATH"
+# eval "$(nodenv init -)"
 
 # phpbrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
@@ -174,3 +174,4 @@ export PATH="./bin:$PATH"
 export GOPATH=$HOME/Development
 export PATH=$GOPATH/bin:$PATH
 
+export PATH=$HOME/.nodebrew/current/bin:$PATH
