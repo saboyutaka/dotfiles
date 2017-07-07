@@ -2,6 +2,7 @@
 *sql.zip
 .DS_Store
 .atom
+.bundle
 .docker
 .env
 .env.development
