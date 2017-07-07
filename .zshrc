@@ -75,7 +75,7 @@ function rprompt-git-info {
   if [[ "$PWD" =~ '/\.git(/.*)?$' ]]; then
           return
   fi
-  name=$(basename "`${git} rev-parse --abbrev-ref HEAD 2> /dev/null`")
+  name=`${git} rev-parse --abbrev-ref HEAD 2> /dev/null`
   if [[ -z $name ]]; then
           return
   fi
@@ -161,6 +161,7 @@ eval "$(pyenv virtualenv-init -)"
 # nodenv
 # export PATH="$HOME/.nodenv/bin:$PATH"
 # eval "$(nodenv init -)"
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # phpbrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
@@ -174,4 +175,5 @@ export PATH="./bin:$PATH"
 export GOPATH=$HOME/Development
 export PATH=$GOPATH/bin:$PATH
 
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# Pokemon-terminal
+export PATH=$HOME/.Pokemon-Terminal:$PATH
