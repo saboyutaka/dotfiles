@@ -150,13 +150,14 @@ export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 # anaconda
 # export PATH="$HOME/anaconda/bin:$PATH"
+export PATH=/Users/yutaka/Development/miniconda3/bin:$PATH
 
 # nodenv
 # export PATH="$HOME/.nodenv/bin:$PATH"
