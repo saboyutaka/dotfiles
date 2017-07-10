@@ -62,7 +62,6 @@ cask 'google-drive'
 # cask 'google-japanese-ime'
 cask 'grandperspective'
 cask 'gyazo'
-cask 'istat-menus'
 cask 'iterm2'
 cask 'keycastr'
 cask 'postico'
@@ -82,7 +81,6 @@ mas 'Be Focused Pro', id: 961632517
 mas 'BetterSnapTool', id: 417375580
 mas 'Bluetooth MIDI Connect', id: 1074606480
 mas 'Growl', id: 467939042
-mas 'Keynote', id: 409183694
 mas 'LanScan', id: 472226235
 mas 'LINE', id: 539883307
 mas 'Night Owl', id: 428834068
