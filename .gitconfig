@@ -7,6 +7,10 @@
   excludesfile = ~/.gitignore
   editor = vim -c \"set fenc=utf-8\"
   filemode = false
+[merge]
+  ff = false
+[pull]
+  rebase = true
 [bash]
   showDirtyState = true
 [alias]
@@ -20,10 +24,9 @@
 
 [ghq]
   root = /Users/yutaka/Development/src
-[pull]
-  rebase = true
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+
