@@ -9,5 +9,5 @@ eval "$(rbenv init -)"
 # rails binstubs
 export PATH="./.bundle/bin:$PATH"
 
-# added by Anaconda3 4.3.1 installer
-export PATH="/Users/yutaka/anaconda/bin:$PATH"
+# added by Miniconda3 4.3.21 installer
+export PATH="/Users/yutaka/Development/miniconda3/bin:$PATH"
