@@ -166,6 +166,7 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # phpbrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+export PATH=$HOME/.composer/vendor/bin:$PATH
 
 # rails binstubs
 # export PATH="./.bundle/bin:$PATH"
