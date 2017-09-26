@@ -80,3 +80,5 @@ alias m='micro'
 alias dc='docker-compose'
 alias dcr='dc run rails'
 
+alias art='php artisan'
+
