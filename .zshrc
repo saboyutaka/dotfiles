@@ -157,7 +157,7 @@ eval "$(rbenv init -)"
 
 # anaconda
 # export PATH="$HOME/anaconda/bin:$PATH"
-export PATH=/Users/yutaka/Development/miniconda3/bin:$PATH
+export PATH=/Users/yutaka/.miniconda3/bin:$PATH
 
 # nodenv
 # export PATH="$HOME/.nodenv/bin:$PATH"
