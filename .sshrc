@@ -1,6 +1,6 @@
 cp $SSHHOME/.sshrc.d/.aliases $HOME
-cp $SSHHOME/.sshrc.d/.bashrc $HOME
+cp $SSHHOME/.sshrc.d/.bash_profile $HOME
 cp $SSHHOME/.sshrc.d/.vimrc $HOME
 cp $SSHHOME/.sshrc.d/.gitconfig $HOME
 source $HOME/.aliases
-source $HOME/.bashrc
+source $HOME/.bash_profile
