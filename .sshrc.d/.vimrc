@@ -27,6 +27,7 @@ set softtabstop=2
 au BufNewFile,BufRead *.py set tabstop=4 shiftwidth=4 softtabstop=4
 au BufNewFile,BufRead *.php set tabstop=4 shiftwidth=4 softtabstop=4
 au BufNewFile,BufRead *.go set tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
+au BufNewFile,BufRead nginx.conf set noexpandtab
 
 nnoremap Y y$
 
