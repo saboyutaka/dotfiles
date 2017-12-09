@@ -16,7 +16,7 @@ brew 'go'
 brew 'heroku'
 brew 'htop'
 brew 'hub'
-brew 'imagemagick@6'
+# brew 'imagemagick@6'
 brew 'jq'
 brew 'libtool'
 brew 'mackup'
@@ -25,7 +25,8 @@ brew 'memcached'
 # brew 'mongodb'
 brew 'mysql'
 brew 'nginx'
-brew 'nodejs'
+brew 'nmap'
+brew 'node'
 brew 'nodenv'
 brew 'openssl'
 brew 'peco'
@@ -39,6 +40,7 @@ brew 'rmtrash'
 brew 'ruby-build'
 brew 'sqlite'
 brew 'sshrc'
+brew 'telnet'
 brew 'tig'
 brew 'tree'
 brew 'v8'
@@ -46,7 +48,7 @@ brew 'yarn'
 brew 'z'
 brew 'zsh-completions'
 brew 'zsh'
-brew "homebrew/php/phpbrew"
+brew 'homebrew/php/phpbrew'
 
 # cask 'alfred'
 cask 'appcleaner'
@@ -78,14 +80,16 @@ cask 'vlc'
 mas 'Airmail 3', id: 918858936
 mas 'Bandwidth+', id: 490461369
 mas 'Be Focused Pro', id: 961632517
-mas 'BetterSnapTool', id: 417375580
 mas 'Bluetooth MIDI Connect', id: 1074606480
 mas 'Growl', id: 467939042
+# mas 'Keynote', id: 409183694
 mas 'LanScan', id: 472226235
 mas 'LINE', id: 539883307
+mas 'Magnet', id: 441258766
 mas 'Night Owl', id: 428834068
 mas 'Skitch', id: 425955336
 mas 'Slack', id: 803453959
 mas 'The Unarchiver', id: 425424353
+mas 'Todoist', id: 585829637
 mas 'Twitter', id: 409789998
 mas 'Wireless Signal', id: 582840059
