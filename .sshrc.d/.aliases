@@ -10,7 +10,6 @@ alias less='less -R'
 #Git aliases
 alias g='git'
 alias ga='git add'
-alias gb='git branch'
 alias gg='display_git_branch_and_wip_files'
 alias gd='git diff '
 alias gdc='git diff --cached'

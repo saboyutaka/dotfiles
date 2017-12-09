@@ -1,3 +1,7 @@
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
 export EDITOR=vim
 
 function display_git_branch_and_wip_files() {
