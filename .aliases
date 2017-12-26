@@ -63,9 +63,6 @@ alias tigdm=' tig master..HEAD'
 alias -g destory=destroy
 
 # Ruby aliases
-alias s='spring'
-alias srs='spring rails s'
-alias src='spring rails c'
 alias bundleinit="bundle install --path=vendor/bundle"
 alias be='bundle exec'
 alias ctagsruby='ctags -f ./.tags --langmap=RUBY:.rb --exclude="*.js"  --exclude=".git*" -R .'
@@ -83,6 +80,6 @@ alias m='micro'
 alias dc='docker-compose'
 alias dcr='dc run rails'
 
+# Laravel
 alias art='php artisan'
 
-alias r='rails'
