@@ -155,7 +155,7 @@ eval "$(rbenv init -)"
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
 
-# anaconda
+# miniconda
 # export PATH="$HOME/anaconda/bin:$PATH"
 export PATH=/Users/yutaka/.miniconda3/bin:$PATH
 
@@ -174,8 +174,12 @@ export PATH="./vendor/bin:$PATH"
 export PATH="./bin:$PATH"
 
 # Go
-export GOPATH=$HOME/Development
+export GOPATH=$HOME/Development/go
 export PATH=$GOPATH/bin:$PATH
+
+# ghq
+export GHQ_ROOT=$HOME/Development/ghq
 
 # Pokemon-terminal
 export PATH=$HOME/.Pokemon-Terminal:$PATH
+
