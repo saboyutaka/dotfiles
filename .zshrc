@@ -181,5 +181,5 @@ export PATH=$GOPATH/bin:$PATH
 export GHQ_ROOT=$HOME/Development/ghq
 
 # Pokemon-terminal
-export PATH=$HOME/.Pokemon-Terminal:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
