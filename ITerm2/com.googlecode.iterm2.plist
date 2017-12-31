@@ -16,6 +16,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
 	<key>CheckTestRelease</key>
@@ -224,14 +226,14 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>650 498 620 392 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 83 796 473 0 0 1920 1057 </string>
+	<string>269 114 918 512 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1057 0 0 1920 1057 </string>
+	<string>226 130 570 707 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>247 107 570 452 0 0 1920 1057 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>268 84 570 452 0 0 1920 1057 </string>
 	<key>NeverWarnAboutPossibleOverrides</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_4DAF0635-3932-4434-AE75-57CC445B115F</key>
@@ -2694,7 +2696,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>pokemon random; clear</string>
+			<string>/Users/yutaka/.local/bin/pokemon; clear</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -3893,13 +3895,13 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>B75BBE09-75C2-4E00-9BE1-A2320DBED880</string>
-	<key>NoSyncSuppressBroadcastInputWarning</key>
+	<string>08FC8331-24B0-4F0E-BD43-8DF1FEEAF48D</string>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
-	<key>NoSyncSuppressBroadcastInputWarning_selection</key>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>528535598.41590703</real>
+	<real>536082682.25477898</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -3966,11 +3968,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml?shard=25</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=33</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-01T07:43:02Z</date>
+	<date>2017-12-27T16:01:46Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -13779,7 +13781,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.2</string>
+	<string>3.1.5.beta.2</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
