@@ -1,6 +1,6 @@
 [user]
-  name = Yutaka Tachibana
-  email = yutaka.paradigm.shift@gmail.com
+	name = Yutaka Tachibana
+	email = yutaka.paradigm.shift@gmail.com
 [color]
   ui = true
 [core]
@@ -27,6 +27,6 @@
 [filter "lfs"]
   required = true
   clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  process = git-lfs filter-process
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 
