@@ -4,6 +4,7 @@
 alias rm='/usr/local/bin/rmtrash'
 alias remove='/bin/rm'
 alias cdr='cd `git rev-parse --show-toplevel`'
+alias cdg='git-root'
 alias up='cd ..'
 alias upp='cd ../../'
 alias uppp='cd ../../../'
