@@ -113,6 +113,12 @@ git_log_after_latest_mpr() {
   git log `git_latest_tag`..origin/master --oneline  --grep 'Merge pull request'
 }
 
+function git-root() {
+  if git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+    cd `pwd`/`git rev-parse --show-cdup`
+  fi
+}
+
 # z
 . `brew --prefix`/etc/profile.d/z.sh
 
