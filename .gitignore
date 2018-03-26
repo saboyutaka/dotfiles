@@ -25,9 +25,10 @@ better_errors.rb
 bq_credentials.json
 docker-compose.local.yml
 keyfile.json
-vendor
 Alfread
 bitbar
 JetBrains
 Library
 .zprofile
+node_modules
+vendor
