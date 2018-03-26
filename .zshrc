@@ -152,7 +152,6 @@ change_iterms_prompt() {
 add-zsh-hook precmd change_iterms_prompt
 
 # rbenv
-export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
 # pyenv
