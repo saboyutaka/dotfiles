@@ -80,12 +80,12 @@ cask 'vlc'
 mas 'Airmail 3', id: 918858936
 mas 'Bandwidth+', id: 490461369
 mas 'Be Focused Pro', id: 961632517
+mas 'BetterSnapTool', id: 417375580
 mas 'Bluetooth MIDI Connect', id: 1074606480
 mas 'Growl', id: 467939042
 # mas 'Keynote', id: 409183694
 mas 'LanScan', id: 472226235
 mas 'LINE', id: 539883307
-mas 'Magnet', id: 441258766
 mas 'Night Owl', id: 428834068
 mas 'Skitch', id: 425955336
 mas 'Slack', id: 803453959
