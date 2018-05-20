@@ -1,4 +1,4 @@
-set nobackup " バックアップを取らない
+set nobackup
 set noswapfile
 set nonumber
 set fenc=utf-8
@@ -9,7 +9,7 @@ set laststatus=2
 set display=lastline
 set scrolloff=5
 set ruler
-set list listchars=tab:\▸\-
+set list listchars=tab:>-,trail:.
 set expandtab
 set ignorecase
 set smartcase
