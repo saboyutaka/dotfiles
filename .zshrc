@@ -155,19 +155,20 @@ add-zsh-hook precmd change_iterms_prompt
 eval "$(rbenv init -)"
 
 # pyenv
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
-# miniconda
+# python
 # export PATH="$HOME/anaconda/bin:$PATH"
-export PATH=/Users/yutaka/.miniconda3/bin:$PATH
+# export PATH=/Users/yutaka/.miniconda3/bin:$PATH
 
 # nodenv
 # export PATH="$HOME/.nodenv/bin:$PATH"
 # eval "$(nodenv init -)"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=./node_modules/.bin:$PATH
 
 # phpbrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
@@ -188,3 +189,5 @@ export GHQ_ROOT=$HOME/Development/ghq
 # Pokemon-terminal
 export PATH=$HOME/.local/bin:$PATH
 
+# direnv
+eval "$(direnv hook zsh)"
