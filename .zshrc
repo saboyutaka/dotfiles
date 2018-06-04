@@ -13,7 +13,7 @@ bindkey "^[[B" history-search-forward
 
 # git completion
 fpath=(~/.zsh/completions $fpath)
-autoload -U compinit && compinit
+autoload -Uz compinit && compinit -i
 
 if [ -e /usr/local/share/zsh-completions ]; then
   fpath=(/usr/local/share/zsh-completions $fpath)
