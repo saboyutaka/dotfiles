@@ -79,7 +79,7 @@ alias m='micro'
 
 # Docker
 alias dc='docker-compose'
-alias dcr='dc run rails'
+alias dcr='dc run --rm'
 
 # Laravel
 alias art='php artisan'
