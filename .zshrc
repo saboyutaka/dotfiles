@@ -135,9 +135,9 @@ function git(){hub "$@"}
 bindkey '^]' peco-src
 
 function peco-src() {
-  local src=$(ghq list --full-path | peco --query "$LBUFFER")
+  local src=$(ghq list | peco --query "$LBUFFER")
   if [ -n "$src" ]; then
-    BUFFER="cd $src"
+    BUFFER="cd $GHQ_ROOT/$src"
     zle accept-line
   fi
   zle -R -c
