@@ -152,42 +152,42 @@ change_iterms_prompt() {
 add-zsh-hook precmd change_iterms_prompt
 
 # rbenv
-eval "$(rbenv init -)"
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(rbenv init -)"
 
 # python
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 # export PATH="$HOME/anaconda/bin:$PATH"
 # export PATH=/Users/yutaka/.miniconda3/bin:$PATH
+# export PATH=/usr/local/opt/python/libexec/bin:$PATH
+# export PATH=$HOME/Library/Python/3.7/bin:$PATH
 
 # nodenv
 # export PATH="$HOME/.nodenv/bin:$PATH"
 # eval "$(nodenv init -)"
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=./node_modules/.bin:$PATH
+# export PATH=$HOME/.nodebrew/current/bin:$PATH
+# export PATH=./node_modules/.bin:$PATH
 
 # phpbrew
-[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
-export PATH=$HOME/.composer/vendor/bin:$PATH
+# [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+# export PATH=$HOME/.composer/vendor/bin:$PATH
 
 # rails binstubs
 # export PATH="./.bundle/bin:$PATH"
-export PATH="./vendor/bin:$PATH"
-export PATH="./bin:$PATH"
+# export PATH="./vendor/bin:$PATH"
+# export PATH="./bin:$PATH"
 
 # Go
-export GOPATH=$HOME/Development/go
-export PATH=$GOPATH/bin:$PATH
+# export GOPATH=$HOME/Development
+# export PATH=$GOPATH/bin:$PATH
 
 # ghq
-export GHQ_ROOT=$HOME/Development/ghq
+export GHQ_ROOT=$HOME/Development/src
 
 # Pokemon-terminal
 export PATH=$HOME/.local/bin:$PATH
 
 # direnv
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
